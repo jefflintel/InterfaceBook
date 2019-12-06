@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+            integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+            crossorigin="anonymous"></script>
+    <script src="js/site.js"></script>
+    <link rel="stylesheet" href="css/standard.css" />
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <header>
+        <button type="button" id="add-post">Add Post</button>
+    </header>
+    <div id="new-post-popup">
+        <textarea></textarea>
+        <button type="button" id="post-delete">Delete</button>
+        <button type="button" id="post-cancel">Cancel</button>
+        <button type="button" id="post-submit">Submit</button>
+    </div>
+    <main>
+        <div class="user-post" id="user-post-template">
+            <div class="edit">&#x270E;</div>
+            <figure>
+                <img src="" />
+                <figcaption>
+                    Username
+                </figcaption>
+            </figure>
+            <div class="post-content">
+                <p>Text</p>
+                <div class="post-details">
+                    <time>time offset</time>
+                    <a class="comment-count" href=""> <span> comments </span></a> 
+                    <span class="add-comment">&#x1F5E9;</span>
+                </div>
+                <div class="post-comments post-comments-template">
+                    <time></time> <span class="username"></span><span class="edit-comment">&#x270E;</span>
+                    <span class="comment-text"></span>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
